@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+
+
+html, body{
+	background-color:#F2F2F2;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	margin:0;
+	padding:0;
+	height:120%;
+	width:100%;
+	text-align:center;
+	background-color:#FFFFFF;
+	position:relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper{
+	width:100%;
+  height: 100%;
+	margin:0 auto 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+	text-align:right;
+	padding:10px;
+	margin-bottom:10px;
+	background-color:#5DBA9D;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header a{
+	font-size:20px;
+	color:#FFFFFF;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	margin-left:10px;
+	text-align:center;
+	display:inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header a:hover, .list-mode header a.hide-list:hover{
+	background-color:#11956c;
+}
+
+header a.hide-list{
+	background-color:#11956c;
+}
+
+.list-mode header a.hide-list{
+	background-color:#5DBA9D;
+}
+
+.list-mode header a.show-list{
+	background-color:#11956c;
+}
+
+.container:after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+.container{
+	padding:10px 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container2{
+	padding:10px 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.wrapper .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width:300px;
+	height:100px;
+	margin:0 10px 10px 0;
+	background-color:#CCCCCC;
+	-webkit-transition:all 1.0s ease;
+	-moz-transition:all 1.0s ease;
+	transition:all 1.0s ease;
+	transition:all 1.0s ease;
+}
+
+.wrapper .box1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width:15%;
+	height:100px;
+	margin:7px 10px 10px 0;
+	background-color:#CCCCCC;
+	-webkit-transition:all 1.0s ease;
+	-moz-transition:all 1.0s ease;
+	transition:all 1.0s ease;
+	transition:all 1.0s ease;
+}
+
+.box h1 {
+  font-size: 42;
+}
+
+.wrapper.list-mode .container{
+	padding-right:10px;
+}
+
+.wrapper.list-mode .box{
+	width:100%;
 }
